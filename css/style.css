@@ -71,17 +71,109 @@ td { vertical-align: top; }
 
 
 /* ===== Primary Styles ========================================================
-   Author:
+   Author: Juan Torres
    ========================================================================== */
 
-
-#divCronometroPrincipal
+@font-face
 {
-    border: 1px #666 solid;
+  font-family: "digitos";
+  src: url("../_fonts/DS-DIGII.eot");
+  src: 
+     url("../_fonts/DS-DIGII.eot?#digi") format("embedded-opentype"),
+     url("../_fonts/DS-DIGII.ttf") format("truetype");
+}
+
+body {
+  background: url(../_images/bg_globo.png) no-repeat black right top;
+  color: white;
+  font-size: 14px;
+  font-family: digitos;
+  padding-top: 20px;
+}
+
+body a {
+  color: white;
+  text-decoration: none;
+}
+
+
+#divCronometroPrincipal {
+    font-size: 5em;
+    margin: 0 auto;
+    text-align: center;
 }​
 
+#divCronometroPrincipal span {
+  border: 1px solid #999999;
+}
+
+#divCronometroPrincipal a:active,#divCronometroPrincipal a:hover,#divCronometroPrincipal a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+div#equipos{
+  margin:50px 0 0 0;
+  text-align: center;
+}
+
+div#equipos div#fila1 div,div#equipos div#fila2 div{
+  background: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: black;
+  display: inline-block;
+  height: 50px;
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+div#equipos div#fila1 div a,div#equipos div#fila2 div a{
+  font-size: 3em;
+  width:100%;
+  height: 100%;
+}
+
+/* Colores de los relojes de los equipos */
+div#equipos div#fila1 div#cronEquipo1{
+  background-color: #33cc00;
+}
+div#equipos div#fila1 div#cronEquipo2{
+  background-color: #000000;
+  border-color: #FFFFFF;
+}
+div#equipos div#fila1 div#cronEquipo3{
+  background-color: #FF0000;
+}
+div#equipos div#fila1 div#cronEquipo4{
+  background-color: #FFFF00;
+}
+div#equipos div#fila2 div#cronEquipo5{
+  background-color: #999999;
+}
+div#equipos div#fila2 div#cronEquipo6{
+  background-color: #ff6600;
+}
+div#equipos div#fila2 div#cronEquipo7{
+  background-color: #FFFFFF;
+}
+div#equipos div#fila2 div#cronEquipo8{
+  background-color: #0033ff;
+}
+
+a#relojEquipo4, a#relojEquipo7 {
+  color: black;
+}
 
 
+#logoActividad {
+  background: url(../_images/imagen_actividad.png) transparent no-repeat;
+  display: block;
+  height: 199px;
+  margin: 0 auto;
+  width: 600px;
+}
 
 
 
